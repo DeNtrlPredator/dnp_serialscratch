@@ -87,8 +87,9 @@ RegisterNetEvent('dnp_serialscratch:scratchcheck', function (data)
                     TriggerServerEvent('dnp_serialscratch:scratchserialfull', data)
                 else
                     if Config.VisnAre then
-                        visfunc.AddInjury ('puncture_wound')
-                        visfunc.SetInjuryLevel ("LEFT_ARM", 'puncture_wound', '0.4')
+                        ApplyDamageToPed(player, 2, false)
+                        --visfunc.AddInjury ('puncture_wound')
+                        --visfunc.SetInjuryLevel ("LEFT_ARM", 'puncture_wound', '0.4')
                     else
                         ApplyDamageToPed(player, 2, false)
                     end
@@ -102,7 +103,8 @@ RegisterNetEvent('dnp_serialscratch:scratchcheck', function (data)
                 TriggerServerEvent('dnp_serialscratch:scratchserialfull', data)
             else
                 if Config.VisnAre then
-                    visfunc.AddInjury ('puncture_wound')
+                    ApplyDamageToPed(player, 2, false)
+                    --visfunc.AddInjury ('puncture_wound')
                     --visfunc.SetInjuryLevel ("LEFT_ARM", 'puncture_wound', '0.4')
                 else
                     ApplyDamageToPed(player, 2, false)
@@ -121,8 +123,8 @@ RegisterNetEvent('dnp_serialscratch:scratchcheck', function (data)
                     else
                         if Config.VisnAre then
                             ApplyDamageToPed(player, 2, false)
-                            visfunc.AddInjury ('puncture_wound')
-                            visfunc.SetInjuryLevel ("LEFT_ARM", 'puncture_wound', '0.4')
+                            --visfunc.AddInjury ('puncture_wound')
+                            --visfunc.SetInjuryLevel ("LEFT_ARM", 'puncture_wound', '0.4')
                         else
                             ApplyDamageToPed(player, 2, false)
                         end
@@ -136,8 +138,9 @@ RegisterNetEvent('dnp_serialscratch:scratchcheck', function (data)
                     TriggerServerEvent('dnp_serialscratch:scratchserialpartial', data)
                 else
                     if Config.VisnAre then
-                        visfunc.AddInjury ('puncture_wound')
-                        visfunc.SetInjuryLevel ("LEFT_ARM", 'puncture_wound', '0.4')
+                          ApplyDamageToPed(player, 2, false)
+                        --visfunc.AddInjury ('puncture_wound')
+                        --visfunc.SetInjuryLevel ("LEFT_ARM", 'puncture_wound', '0.4')
                     else
                         ApplyDamageToPed(player, 2, false)
                     end
