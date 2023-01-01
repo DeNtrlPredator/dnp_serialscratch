@@ -1,9 +1,16 @@
 
 fx_version 'cerulean'
 
-author 'KevinGirardx'
+author 'DeNtrlPredator'
+description 'QB-Core weapon serial scratching system'
+version '1.2'
 
 game 'gta5'
+
+shared_scripts {
+    'config.lua',
+	'@ox_lib/init.lua'
+}
 
 client_scripts {
 	'client/*.lua',
@@ -11,10 +18,6 @@ client_scripts {
 
 server_scripts {
 	'server/*.lua',
-}
-
-shared_scripts {
-	'@ox_lib/init.lua',
 }
 
 lua54 'yes'
