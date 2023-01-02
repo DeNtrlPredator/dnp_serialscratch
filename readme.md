@@ -18,6 +18,9 @@
 - qb-target
 - ox_lib - https://github.com/overextended/ox_lib/releases/tag/v2.19.1 or ps-ui for skill check - https://github.com/Project-Sloth/ps-ui
 
+# Available Options
+- integration with Visn_are damage system
+
 # Credits
 - https://github.com/KevinGirardx - forked from kevin-weaponscratch
 - https://github.com/pushkart2
