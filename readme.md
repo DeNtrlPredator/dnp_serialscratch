@@ -1,4 +1,4 @@
-## H2 DNP_SerialScratch
+##DNP_SerialScratch
 - Easy Config for multiple locations
 - Requires items of choice
 - Skill checks based on item 
