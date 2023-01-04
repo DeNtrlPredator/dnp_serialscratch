@@ -1,5 +1,4 @@
 local QBCore = exports['qb-core']:GetCoreObject()
-local visfunc = exports["visn_are"]:GetSharedFunctions()
 
 local ScratchTable = nil
 
@@ -94,6 +93,7 @@ RegisterNetEvent('dnp_serialscratch:scratchcheck', function (data)
                     TriggerServerEvent('dnp_serialscratch:scratchserialfull', data)
                 else
                     if Config.VisnAre then
+                        local visfunc = exports["visn_are"]:GetSharedFunctions()
                         ApplyDamageToPed(player, 25, false)
                         local injury = { key = "laceration", bodyPart = arm }
                         visfunc.AddInjury(injury)
@@ -111,6 +111,7 @@ RegisterNetEvent('dnp_serialscratch:scratchcheck', function (data)
                 TriggerServerEvent('dnp_serialscratch:scratchserialfull', data)
             else
                 if Config.VisnAre then
+                    local visfunc = exports["visn_are"]:GetSharedFunctions()
                     ApplyDamageToPed(player, 25, false)
                     local injury = { key = "laceration", bodyPart = arm }
                     visfunc.AddInjury(injury)
@@ -131,6 +132,7 @@ RegisterNetEvent('dnp_serialscratch:scratchcheck', function (data)
                         TriggerServerEvent('dnp_serialscratch:scratchserialpartial', data)
                     else
                         if Config.VisnAre then
+                            local visfunc = exports["visn_are"]:GetSharedFunctions()
                             ApplyDamageToPed(player, 10, false)
                             local injury = { key = "puncture_wound", bodyPart = arm }
                             visfunc.AddInjury(injury)
@@ -148,6 +150,7 @@ RegisterNetEvent('dnp_serialscratch:scratchcheck', function (data)
                     TriggerServerEvent('dnp_serialscratch:scratchserialpartial', data)
                 else
                     if Config.VisnAre then
+                        local visfunc = exports["visn_are"]:GetSharedFunctions()
                         ApplyDamageToPed(player, 10, false)
                         local injury = { key = "puncture_wound", bodyPart = arm }
                         visfunc.AddInjury(injury)
