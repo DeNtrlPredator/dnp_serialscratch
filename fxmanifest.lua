@@ -3,7 +3,7 @@ fx_version 'cerulean'
 
 author 'DeNtrlPredator'
 description 'QB-Core weapon serial scratching system'
-version '1.2'
+version '1.3.0'
 
 game 'gta5'
 
